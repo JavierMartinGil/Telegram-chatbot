@@ -19,7 +19,7 @@ const creatorCommand = require('./commands/creator');
 
 const bot = new Telegraf(process.env.BOT_TOKEN)
 expressApp.use(bot.webhookCallback('/secret-path'))
-bot.telegram.setWebhook('https://2e4d94cb.ngrok.io/secret-path')
+bot.telegram.setWebhook('https://chatbot-telegram-jmg.herokuapp.com/secret-path')
 
 expressApp.get('/', (req, res) => {
     res.send('Hello World!')
